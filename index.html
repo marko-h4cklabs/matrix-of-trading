@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matrix Of Trading — See the code behind the market</title>
+<meta name="description" content="Three TradingView indicators for gold, read as one system: time, energy and liquidity. Watch them live on XAUUSD, 24/7.">
+<meta name="theme-color" content="#050807">
+<meta property="og:title" content="Matrix Of Trading">
+<meta property="og:description" content="Three indicators. One system. Watch them read gold live, 24/7.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Matrix Of Trading, back to top">
+    <svg class="brand-mark" viewBox="0 0 400 400" aria-hidden="true"><path d="M 226.05 52.28 A 150 150 0 1 1 173.95 52.28" class="snake" stroke-width="28"/><ellipse cx="212" cy="50" rx="34" ry="22" class="snake-head"/><path d="M200 128 L262 236 L138 236 Z" class="tri" stroke-width="18"/></svg>
+    <span>MATRIX OF TRADING</span>
+  </a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+  <nav id="nav-links" class="nav-links">
+    <a href="#live">Live feed</a>
+    <a href="#system">The system</a>
+    <a href="#indicators">Indicators</a>
+    <a href="#numbers">The code of 8</a>
+    <a href="#access">Founder access</a>
+    <a class="btn btn-outline nav-cta" href="#join" data-telegram>Join free Telegram</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section id="top" class="hero">
+  <div class="rain" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="live-chip"><span class="dot"></span>Live on XAUUSD · 24/7</div>
+      <h1>See the code behind the <em>market.</em></h1>
+      <p class="lead">Three indicators, read as one system: when gold moves, how much force is behind it, and where price is being drawn. Streaming live around the clock — every call, unedited.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="#live">Watch the live feed</a>
+        <a class="btn btn-gold" href="#join">Join the free Telegram</a>
+      </div>
+      <div class="glyph-row"><span>♄ Time</span><span>♂&#xFE0E; Energy</span><span>☽ Liquidity</span></div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 400 400" role="img" aria-label="Ouroboros encircling a triangle of Saturn, Mars and the Moon, with the number 8 at its centre">
+        <circle cx="200" cy="200" r="198" fill="#050807"/>
+        <circle cx="200" cy="200" r="184" class="ring" opacity=".4"/>
+        <circle cx="200" cy="200" r="116" class="ring" opacity=".25"/>
+        <path d="M 226.05 52.28 A 150 150 0 1 1 173.95 52.28" class="snake" stroke-width="18"/>
+        <path d="M 226.05 52.28 A 150 150 0 1 1 173.95 52.28" fill="none" stroke="#050807" stroke-width="18" stroke-dasharray="2 10" opacity=".6"/>
+        <ellipse cx="211" cy="50" rx="27" ry="15" class="snake-head"/>
+        <circle cx="202" cy="45" r="3" class="eye"/>
+        <path d="M200 112 L276 244 L124 244 Z" class="tri" stroke-width="1.5"/>
+        <circle cx="200" cy="112" r="21" class="node"/>
+        <circle cx="124" cy="244" r="21" class="node"/>
+        <circle cx="276" cy="244" r="21" class="node"/>
+        <text x="200" y="113" class="planet">♄</text>
+        <text x="124" y="245" class="planet">♂&#xFE0E;</text>
+        <text x="276" y="245" class="planet">☽</text>
+        <text x="200" y="204" class="eight">8</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="live" class="section">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">01 — The feed</div>
+      <h2>Watch it read gold. Live.</h2>
+    </div>
+    <div class="live-grid">
+      <div class="video" id="video">
+        <div class="video-badge"><span class="dot"></span>Live · XAUUSD</div>
+        <div class="video-placeholder">Live stream starting soon</div>
+      </div>
+      <div class="points">
+        <div><h3>24/7 on gold</h3><p>The chart never sleeps, and neither does the feed.</p></div>
+        <div><h3>Nothing edited</h3><p>Every signal stays on screen — the wins and the losses alike.</p></div>
+        <div><h3>Judge for yourself</h3><p>Watch for as long as you like before you decide anything.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="system" class="section">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">02 — The system</div>
+      <h2>Three layers. One reading.</h2>
+      <p class="sub">Most indicators answer a single question. The Matrix asks three — and the chart only tells one clear story when all three agree.</p>
+    </div>
+    <div class="grid-3 layers">
+      <div class="layer"><div class="kicker">01 · When</div><h3>Time</h3><p>The windows when gold tends to move — and the hours when it is better to wait.</p></div>
+      <div class="layer"><div class="kicker">02 · How strong</div><h3>Energy</h3><p>The force behind a move — whether it has fuel, or is running on empty.</p></div>
+      <div class="layer"><div class="kicker">03 · Where</div><h3>Liquidity</h3><p>The levels price is being drawn toward, the way the tide is drawn by the moon.</p></div>
+    </div>
+    <div class="equation">When + how strong + where = the reading</div>
+  </div>
+</section>
+
+<section id="indicators" class="section">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">The indicators</div>
+      <h2>Each one ruled by its planet.</h2>
+    </div>
+    <div class="grid-3">
+      <article class="card indigo">
+        <div class="sigil">♄</div>
+        <h3>Chronos</h3>
+        <div class="card-meta">Time · ruled by Saturn</div>
+        <p>Saturn is the keeper of cycles. Chronos maps the sessions and time windows where gold makes its moves, so you know when to pay attention.</p>
+        <div class="shot" data-img="assets/chronos.png" data-alt="Chronos indicator on a gold chart">Chart screenshot coming soon</div>
+      </article>
+      <article class="card gold">
+        <div class="sigil">♂&#xFE0E;</div>
+        <h3>Ares</h3>
+        <div class="card-meta">Energy · ruled by Mars</div>
+        <p>Mars is drive and force. Ares measures the energy behind price, separating moves with real momentum from ones about to fade.</p>
+        <div class="shot" data-img="assets/ares.png" data-alt="Ares indicator on a gold chart">Chart screenshot coming soon</div>
+      </article>
+      <article class="card green">
+        <div class="sigil">☽</div>
+        <h3>Selene</h3>
+        <div class="card-meta">Liquidity · ruled by the Moon</div>
+        <p>The Moon commands the tides. Selene marks the liquidity levels price is pulled toward — where the market is likely to reach next.</p>
+        <div class="shot" data-img="assets/selene.png" data-alt="Selene indicator on a gold chart">Chart screenshot coming soon</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="numbers" class="section">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="big-eight">
+        <div class="eight-glyph" aria-hidden="true">8</div>
+        <div class="eight-cap">80 → 8 → ∞</div>
+      </div>
+      <div class="numbers-copy">
+        <div class="kicker">03 — The code of 8</div>
+        <h2>The name was never random.</h2>
+        <div class="letters" id="letters"></div>
+        <div class="sum">31 + 12 + 37 = 80 → 8 + 0 = 8</div>
+        <p class="sub">In Pythagorean numerology, Matrix Of Trading reduces to 8 — the number of abundance, power and mastery over the material world. Turn it on its side and it becomes ∞: the endless cycle every market repeats.</p>
+      </div>
+    </div>
+    <div class="founder">
+      <div class="kicker">The founder’s chart</div>
+      <div class="grid-3">
+        <div class="trait"><div class="trait-n sym">♉&#xFE0E;</div><div><h3>Sun in Taurus</h3><p>Ruled by Venus. The sign of value, patience — and gold.</p></div></div>
+        <div class="trait"><div class="trait-n">22</div><div><h3>The Master Builder</h3><p>Born on the 22nd, the master number of turning vision into structure.</p></div></div>
+        <div class="trait"><div class="trait-n">5</div><div><h3>Life Path of Movement</h3><p>Freedom, change and momentum — the very nature of markets.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="section">
+  <div class="wrap">
+    <div class="head">
+      <div class="kicker">04 — Founder access</div>
+      <h2>The Trinity. Yours for life.</h2>
+      <p class="sub">Chronos, Ares and Selene in one lifetime licence. Released in three sealed batches — when a batch closes, it never reopens at that price.</p>
+    </div>
+    <div class="grid-3 tiers">
+      <div class="tier open">
+        <div class="tier-top"><span>Batch I</span><span>8 seats</span></div>
+        <div class="price">$888</div>
+        <div class="status"><span class="dot"></span><span>Open · <b id="seats-left">8</b> of 8 seats left</span></div>
+        <a class="btn btn-solid" href="#join" id="buy-link">Claim a founder seat</a>
+      </div>
+      <div class="tier">
+        <div class="tier-top"><span>Batch II</span><span>Sealed</span></div>
+        <div class="price">$1,888</div>
+        <div class="status">Opens when Batch I fills</div>
+        <div class="btn btn-sealed" aria-disabled="true">Sealed</div>
+      </div>
+      <div class="tier">
+        <div class="tier-top"><span>Batch III</span><span>Sealed</span></div>
+        <div class="price">$2,888</div>
+        <div class="status">Opens when Batch II fills</div>
+        <div class="btn btn-sealed" aria-disabled="true">Sealed</div>
+      </div>
+    </div>
+    <div class="includes">
+      <div class="kicker">Every seat includes</div>
+      <ul>
+        <li>Lifetime access to Chronos, Ares and Selene</li>
+        <li>Invite-only TradingView access on your username</li>
+        <li>Private members’ group</li>
+        <li>1:1 onboarding call</li>
+        <li>Every future update, forever</li>
+      </ul>
+    </div>
+    <div class="launch" id="launch">● Launching on the new moon</div>
+  </div>
+</section>
+
+<section id="join" class="section join">
+  <div class="wrap narrow">
+    <h2>The feed is <em>free.</em></h2>
+    <p class="sub">Join the Telegram to see every reading as it happens, with a short recap of the day’s key moves.</p>
+    <form class="signup" id="signup" method="POST">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+      <button class="btn btn-goldfill" type="submit">Get the daily recap</button>
+    </form>
+    <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+    <div class="or">or</div>
+    <a class="btn btn-outline" href="#" data-telegram target="_blank" rel="noopener">Open the Telegram group</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <span class="brand-text">MATRIX OF TRADING</span>
+      <div class="foot-links">
+        <a href="#" data-youtube target="_blank" rel="noopener">YouTube</a>
+        <a href="#" data-telegram target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <p class="disclaimer">Risk disclaimer: trading gold, forex and CFDs carries a high level of risk and may not be suitable for everyone. Nothing on this site or in the live feed is financial advice. The indicators display market conditions; they do not predict or guarantee outcomes, and past performance is not indicative of future results. Numerology and astrology references are part of the brand’s identity, not a trading method.</p>
+    <div class="copy">© <span id="year">2026</span> Matrix Of Trading · Charts by TradingView</div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
